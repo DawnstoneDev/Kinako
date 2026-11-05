@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF4D9"/>
+      <stop offset="1" stop-color="#EBC98B"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B97B40"/>
+      <stop offset="1" stop-color="#9A6330"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7F4D24"/>
+      <stop offset="1" stop-color="#6A3E1C"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#613819"/>
+      <stop offset="1" stop-color="#4B2A11"/>
+    </linearGradient>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#3b2009" flood-opacity="0.28"/>
+    </filter>
+    <filter id="icon" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <clipPath id="sq"><rect x="100" y="100" width="824" height="824" rx="186"/></clipPath>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)" filter="url(#icon)"/>
+  <g clip-path="url(#sq)">
+    <ellipse cx="512" cy="160" rx="520" ry="200" fill="#fff" opacity="0.35"/>
+  </g>
+  <rect x="101" y="101" width="822" height="822" rx="185" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2"/>
+
+  <!-- きなこの粒 -->
+  <g fill="#C9904F" opacity="0.55">
+    <circle cx="262" cy="290" r="11"/><circle cx="318" cy="236" r="7"/>
+    <circle cx="760" cy="258" r="9"/><circle cx="716" cy="214" r="6"/>
+    <circle cx="796" cy="330" r="6"/><circle cx="228" cy="352" r="6"/>
+  </g>
+
+  <!-- 影 -->
+  <ellipse cx="512" cy="742" rx="190" ry="34" fill="#3b2009" opacity="0.22" filter="url(#drop)"/>
+
+  <!-- 箱 -->
+  <g filter="url(#drop)">
+    <polygon points="512,300 694,405 512,510 330,405" fill="url(#top)"/>
+    <polygon points="330,405 512,510 512,720 330,615" fill="url(#left)"/>
+    <polygon points="512,510 694,405 694,615 512,720" fill="url(#right)"/>
+  </g>
+
+  <!-- テープ -->
+  <polygon points="584.8,342 621.2,363 439.2,468 402.8,447" fill="#FBEBCB"/>
+  <polygon points="402.8,447 439.2,468 439.2,678 402.8,657" fill="#E3CD9E"/>
+
+  <!-- 稜線のハイライト -->
+  <polyline points="330,405 512,510 694,405" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="512" y1="510" x2="512" y2="720" stroke="#fff" stroke-opacity="0.16" stroke-width="3"/>
+</svg>
